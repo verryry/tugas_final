@@ -17,7 +17,6 @@ if (isset($_GET['id'])) {
 }
 
 ?>
-<link rel="shortcut icon" href="tampilan/aksesoris/icon/unnamed.ico">
 <title>Artikel</title>
 <style>
 	.panel_single{
@@ -48,7 +47,8 @@ if (isset($_GET['id'])) {
 		padding: 12px;
 		min-width: 90px;
 		min-height: 90px;
-		margin-left: 7px;
+		margin-left: 15px;
+
 	}
 	#komentar{
 		color: black;
@@ -69,6 +69,12 @@ if (isset($_GET['id'])) {
 		color: black;
 		padding-left: 7px;
 	}
+	textarea {
+		border: 0.5px solid #337ab7;
+	}
+	input[type=submit]{
+		background: lightblue;
+	}
 </style>
 <div class="container-fluid">
 <div class="panel_single">
@@ -88,7 +94,7 @@ if (isset($_GET['id'])) {
 	<h4 id="comment">Comment</h4>
 		<input type="hidden" name="id_artikel" value="<?=$id_awal;?>">
 		<input type="hidden" name="komentator" value="<?=$_SESSION['username'];?>">
-		<textarea name="komentar" class="komentar" rows="8" cols="210"></textarea>
+		<textarea name="komentar" class="komentar" rows="8" cols="183"></textarea>
 		<input type="submit" name="submit" value="Submit" style="color: black;">
 	</form>
 </div><br><br>

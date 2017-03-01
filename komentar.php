@@ -19,10 +19,12 @@ $komen = $data->fetchAll();
 foreach ($komen as $key) {
 ?>
 
-<div>
-  <div>
+<div class="all-comment">
+  <div class="commenters">
       <p>Comentators : <?= $key['komentator'];?></p>
         <hr />
+        </div>
+  <div class="comments">
       <p>Comment : <?= $key['komentar'];?></p>
         <br />
   </div>
