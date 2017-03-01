@@ -1,0 +1,23 @@
+Buat repository baru, misalnya dengan nama “androidVoter” kemudian klik tombol Create repository lihat gambar:
+Sekarang kita bisa mengakses remote repository dengan url https://github.com/firmansg/androidVoter.git
+Arahkan pada direktori tempat project akan diupload ke repository di Github
+Untuk pengguna Windows klik kanan folder project dan pilih Git Bash. Berikut gambarnya:
+Kemudian akan muncul command prompt / CMD
+Jika baru pertama kali meggunakan software Git, sebaiknya konfigurasi username dan email dulu
+Git config --global user.name "username anda"
+Git config --global user.email “email anda”
+Setelah melakukan konfigurasi username dan email, kemudian lakukan inisiasi dengan menulis perintah berikut
+Git init
+Kemudian tambahkan semua file yang ada dalam folder project kita, ketikan
+Git add *
+Buat commit projectnya, sebagai contoh disini commit “versi 1.0”
+Git commit –m "versi 1.0"
+Setelah kita buat commit untuk projectnya, remote repository yang telah dibuat tadi, contoh https://github.com/firmansg/androidVoter.git, ketikan
+Git remote add origin https://github.com/firmansg/androidVoter.git
+Setelah meremote repository, kemudian kita pull projectnya dengan perintah
+Git pull origin master
+Kirim project ke repository kita
+Git push origin master
+Terakhir, kita akan diminta username dan password kita. Untuk password mungkin kita tidak akan melihat password yang kita ketikan
+Tunggu sampai project selesai di upload
+Jika proses upload selesai, cek pada Github lalu refresh repository, maka file kita sudah terupload disana
