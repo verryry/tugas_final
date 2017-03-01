@@ -82,6 +82,7 @@ if (isset($_GET['id'])) {
 </div>
 </div>
 </div>
+<?php include 'komentar.php';?>
 <div class="comment">
 	<form action="postcomment.php" method="POST">
 	<h4 id="comment">Comment</h4>
@@ -91,7 +92,6 @@ if (isset($_GET['id'])) {
 		<input type="submit" name="submit" value="Submit" style="color: black;">
 	</form>
 </div><br><br>
-<?php include 'komentar.php';?>
 <div>
 <?php require_once 'tampilan/footer.php';?>
 </div>
